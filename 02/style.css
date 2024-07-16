@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #D9CDF7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  all: unset;
+}
+
+/* PRODUCT */
+
+.product-img {
+  width: 449px;
+}
+
+/* DETAILS */
+
+.details .code {
+  font-size: 10px;
+  color: #271A45;
+}
+
+.details .price {
+  color: #271A45;
+  opacity: 67%;
+}
+
+.details h1 {
+  color: #271A45;
+  font-family: "Crimson Pro", serif;
+}
+
+.details button {
+  color: #271A45;
+  border: 1px solid #271A45;
+  border-radius: 50px;
+  font-size: 12px;
+
+  padding: 8px 16px;
+  width: auto;
+}

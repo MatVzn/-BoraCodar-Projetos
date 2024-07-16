@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* GERAL */
+
+body {
+  background-color: #0F0D13;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #E1E1E6;
+}
+
+/* MAIN */
+
+.player {
+  display: flex;
+  flex-direction: row;
+  gap: 1.75rem;
+}
+
+.music-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  padding: 3.1rem 2.4rem;
+  border-radius: .6rem;
+}
+
+.small-box {
+  padding: 2rem;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-model {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.banner {
+  width: 12rem;
+  border-radius: .4rem;
+}
+
+.small {
+  width: 5.25rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  opacity: 67%;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.time-bar {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.bar {
+  position: relative;
+}
+
+.bar::before {
+  content: '';
+  height: 6px;
+  width: 100%;
+  display: block;
+  background-color: #d9d9d9;
+  opacity: 0.3;
+  border-radius: .6rem;
+
+  position: absolute;
+}
+
+.bar::after {
+  content: '';
+  height: 6px;
+  width: 85%;
+  display: block;
+  background-color: #d9d9d9;
+  border-radius: .6rem;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time p {
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 2rem 3rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.credits-link a, .next {
+  all: unset;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #E1E1E6;
+  transition: all .3s;
+  border: 2px #925092 solid;
+  border-radius: .6rem;
+  padding: .5rem;
+
+  transition: all .2s;
+}
+
+.credits-link a:hover, .next:hover {
+  border: 2px #c266c2 solid;
+}
