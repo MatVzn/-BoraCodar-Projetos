@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/favicon.svg">
+    <link rel="icon" href="./assets/favicon.svg" type="icon" >
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap');
     </style>
@@ -14,8 +14,9 @@
   <main>
 
     <div class="product">
-      <button>
-        <img src="./assets/360.svg" alt="">
+      <button onclick="changeMode()" class="change-mode">
+        <img src="./assets/360.svg" id="changeModeButton">
+        <img src="./assets/close.svg" class="hidden" id="closeButton">
       </button>
       <img class="product-img" src="./assets/product.png" alt="product image">
     </div>
@@ -30,5 +31,6 @@
     </div>
 
   </main>
+  <script src="./script.js" ></script>
 </body>
 </html>

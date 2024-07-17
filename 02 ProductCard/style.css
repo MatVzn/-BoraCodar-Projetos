@@ -15,9 +15,16 @@ body {
 
 /* MAIN */
 
+.hidden {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: row;
+  gap: 13px;
+  height: 279px;
+  margin-right: 100px;
 }
 
 .product {
@@ -28,7 +35,7 @@ main {
 .details {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 }
 
 .details div {
@@ -45,18 +52,38 @@ button {
 
 .product-img {
   width: 449px;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-40px);
+}
+
+.change-mode {
+  margin-left: auto;
+  margin-right: 50px;
+  position: relative;
+  z-index: 2;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  transition: .2s;
+}
+
+.change-mode:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* DETAILS */
 
 .details .code {
-  font-size: 10px;
+  font-size: 12px;
   color: #271A45;
 }
 
 .details .price {
   color: #271A45;
   opacity: 67%;
+  font-size: 18px;
 }
 
 .details h1 {
@@ -68,8 +95,15 @@ button {
   color: #271A45;
   border: 1px solid #271A45;
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 14px;
 
   padding: 8px 16px;
-  width: auto;
+  margin-right: auto;
+  transition: all .2s;
+}
+
+.details button:hover {
+  background-color: #271A45;
+  color: #D9CDF7;
+  cursor: pointer;
 }
